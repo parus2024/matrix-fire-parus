@@ -1,3 +1,4 @@
+# Made by @parussmart
 addressable_lambda:
   name: "Fire Parus"
   update_interval: 60ms
@@ -149,3 +150,4 @@ addressable_lambda:
       }
     }
 
+  
