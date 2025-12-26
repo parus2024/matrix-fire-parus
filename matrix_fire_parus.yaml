@@ -7,14 +7,11 @@ addressable_lambda:
     const int H = ${height_leds};
 
     // Получаем значения со слайдеров (number)
-    const uint8_t COOLING_RAW = 255 - static_cast<uint8_t>(id(matrix_intensity).state);  // 0–255
+    const uint8_t COOLING_RAW = 255 - static_cast<uint8_t>(id(matrix_intensity).state);  // 0–255 (50)
     const uint8_t COOLING = std::max(static_cast<uint8_t>(20), COOLING_RAW);             // минимум 20!
-    const uint8_t SPARKING = static_cast<uint8_t>(id(matrix_speed).state);               // 0–255
-    const uint8_t ORIENTATION = static_cast<uint8_t>(id(matrix_orientation).state);      // 1–8
-    const uint8_t FIRE_SPEED = static_cast<uint8_t>(id(matrix_scale).state);             // 0–100
-
-    const uint8_t BASE_COOLING = 50;  // фиксированное остывание
-    uint8_t FLAME_SPEED = COOLING_RAW;    // скорость распространения = matrix_speed
+    const uint8_t SPARKING = static_cast<uint8_t>(id(matrix_speed).state);               // 0–255 (150)
+    const uint8_t ORIENTATION = static_cast<uint8_t>(id(matrix_orientation).state);      // 1–8 (2)
+    const uint8_t FIRE_SPEED = static_cast<uint8_t>(id(matrix_scale).state);             // 0–100 (80)
 
     // Фиксированные параметры, можно менять или привязать к слайдерам
     const uint8_t COAL_ZONE_HEIGHT = 1; // Высота зоны углей (строк снизу)
