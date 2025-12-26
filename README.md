@@ -64,6 +64,7 @@
 ### Слайдеры для управления и настройки.
 Для использование с проектом Matrix-Lamp https://github.com/andrewjswan/matrix-lamp добавлять их не нужно, они уже существуют в проекте.
 Для использования вне прокта нужно добавить компоненты number со следующими id:
+
 number:
   # Matrix Orientation
   - platform: template
@@ -133,7 +134,7 @@ number:
 
 - ESPHome сообществу за отличный фреймворк.
 - Home Assistant за интеграцию.
-- @andrewjswan за отличный проект [matrix-lamp](https://github.com/andrewjswan/matrix-lamp)
+- [@andrewjswan](https://github.com/andrewjswan) за отличный проект [matrix-lamp](https://github.com/andrewjswan/matrix-lamp)
 - Вам за использование! Если проект полезен, поставьте ⭐ на GitHub.
 
 ---
