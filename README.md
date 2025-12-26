@@ -121,7 +121,7 @@ number:
 
 - [yaml файл прошивки](matrix_fire_parus.yaml)
 - [Скриншот](matrix-fire-parus.jpg)
-- [Видео YOUTUBE](https://youtu.be/TDQovWRaWWA)
+- [Видео YOUTUBE](https://www.youtube.com/shorts/WEGVUN41hac)
 
 ---
 
