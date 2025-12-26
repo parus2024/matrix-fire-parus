@@ -65,7 +65,57 @@
 В файле yaml проекта закомментированы number.
 Для использование с проектом Matrix-Lamp https://github.com/andrewjswan/matrix-lamp раскомментировать их не нужно, они уже существуют в проекте.
 Для использования вне Matrix-Lamp прокта нужно раскомментировать эти компоненты или перенести в главный файл Вашего прокта.
-
+```yaml
+number:
+  # Matrix Orientation
+  - platform: template
+    name: Matrix Orientation
+    icon: mdi:autorenew
+    min_value: 1
+    max_value: 8
+    step: 1
+    optimistic: true
+    id: matrix_orientation
+    initial_value: 2
+    mode: slider
+    entity_category: config
+    disabled_by_default: true
+    restore_value: true
+ # Matrix Settings
+  - platform: template
+    name: Effect Intensity
+    icon: mdi:spotlight
+    min_value: 0
+    max_value: 255
+    step: 1
+    optimistic: true
+    id: matrix_intensity
+    initial_value: 128
+    mode: slider
+    entity_category: config
+  - platform: template
+    name: Effect Speed
+    icon: mdi:speedometer
+    min_value: 0
+    max_value: 255
+    step: 1
+    optimistic: true
+    id: matrix_speed
+    initial_value: 128
+    mode: slider
+    entity_category: config
+  - platform: template
+    name: Effect Scale
+    icon: mdi:drag-variant
+    min_value: 0
+    max_value: 100
+    step: 1
+    optimistic: true
+    id: matrix_scale
+    initial_value: 50
+    mode: slider
+    entity_category: config
+```
 ---
 
 ## 📊 Скриншоты и Видео
